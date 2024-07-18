@@ -46,7 +46,7 @@ function searchRecipe(){
     }
    })
    .catch(error => {
-    console.error('An error occurred:', error.message);
+    console.error('Error:', error);
     result.innerHTML = '<p>An error occurred while fetching recipes.</p>';
   });
 }
@@ -61,8 +61,8 @@ function handleIngredients(recipe){
     const ingredient = recipe[`strIngredient${i}`];
     const measure = recipe[`strMeasure${i}`];
 
-      // Check if ingredient exists and is not empty
-    if(ingredient.trim() !== ''){
+      // Holds the value of current and checks if ingredient exists and is not empty
+    if(ingredient && ingredient.trim() !== ''){
     // This makes the HTML list item for the ingredient and measure
       handleIngredientMeasure += `<li>${measure} ${ingredient}<li>`;
     }
