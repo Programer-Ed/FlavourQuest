@@ -33,6 +33,7 @@ function searchRecipe(){
            <div>
             <h2>${recipe.strMeal}</h2>
             <img src="${recipe.strMealThumb}" alt="${recipe.strMeal}">
+            <p>Category: ${recipe.strCategory}</p>
             <p>Area: ${recipe.strArea}</p>
             <h3>Ingredients:</h3>
             <ul>

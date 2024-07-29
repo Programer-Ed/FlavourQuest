@@ -3,7 +3,12 @@
     padding: 0;
 }
 body{
-    background-color: azure;
+    background-color: black;
+    background-image: url(https://cdn.vectorstock.com/i/500p/87/96/set-of-fresh-vegetables-on-dark-background-vector-21278796.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100px 100px 100px 100px;
+
 }
 header{
     background-color: rgb(8, 8, 71);
@@ -26,6 +31,7 @@ input[type="text"]{
     border: none;
     outline: none;
     border-radius: 2px;
+    cursor: pointer;
 }
 #results {
   margin: 40px 0;
@@ -50,10 +56,13 @@ input[type="text"]{
 p{
   text-align: center;
   font-weight: bold;
+  color: #071879;
+  animation: effect infinite;
 }
 h2{
   text-align: center;
   color: #071879;
+
 } 
 #results ul {
   margin: 0;
